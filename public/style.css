@@ -1,0 +1,219 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+input {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  bac
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: black;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  font-family: Courier;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+  
+}
+
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+
+}
+
+.login.page .title,
+.login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .0em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret2 {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
+
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+  background-color: black;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://cdn.glitch.com/436d5d37-ce1c-4e67-ae06-74f096f4b670%2Fsunflowers.jpg?v=1621642708338');
+  background-position: top;
+}
+
+/* Font */
+
+.messages {
+  font-size: 115%;
+  color: white;
+}
+
+.inputMessage {
+  font-size: 100%;
+  color: white;
+  font-color: white;
+}
+
+.log {
+  color: white;
+  font-size: 75%;
+  margin: 5px;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lime; }
+
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.messages {
+  height: 90%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+  font-family: consolas;
+}
+
+.message.typing .messageBody {
+  color: grey;
+}
+
+.username {
+  font-weight: 500;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+  font-family: Consolas;
+  color: #1CC113;
+}
+
+/* Input */
+
+.inputMessage {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  font-color: white;
+  
+}
+body,
+html {
+  overflow: hidden;
+}
+
+.vl {
+  border-left: 2px solid white;
+  height: 600px;
+  position: absolute;
+  left: 0.5%;
+  margin-left: -3px;
+  top: 0;
+}
+
+
